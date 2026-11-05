@@ -19,7 +19,7 @@ chmod 600 ~/.netrc
 In Xcode, add the package at `https://github.com/MarcoLuthi/typomat-engine-open`, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.2.0")
+.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.2.1")
 ```
 
 A licence that has ended keeps the versions that came out while it ran. `Package.resolved` pins one for good, so those builds go on working.
@@ -77,6 +77,8 @@ These are synchronous and safe on any thread. A dial can call them on every chan
 ## Without a licence
 
 `TypomatEngine()` works in evaluation mode. Compiled fonts hold A to Z and a to z, and their names and terms say what they are. `engine.license` tells you which mode you're in and why. The licence key is checked offline, and nothing leaves the device.
+
+Most plans work only in the apps your key names. Add your app's bundle ID in [your account](https://engine.typomat.app/account), and copy the new key it gives you. In any other app, `engine.license.reason` is `.app`, and the engine runs in evaluation mode.
 
 ## Things to know
 
