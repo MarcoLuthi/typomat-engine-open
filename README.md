@@ -7,7 +7,7 @@ Makes fonts from a recipe, on the device. iOS 17, macOS 14 and Mac Catalyst 17 o
 In Xcode, add the package at `https://github.com/MarcoLuthi/typomat-engine-open`, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.3.0")
+.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.3.1")
 ```
 
 It needs no account or token. Your licence key, in your code, decides what the engine does.
@@ -66,7 +66,7 @@ These are synchronous and safe on any thread. A dial can call them on every chan
 
 ## Without a licence
 
-`TypomatEngine()` works in evaluation mode, under the evaluation terms in the [Engine License](https://engine.typomat.app/license#evaluation). Compiled fonts hold A to Z and a to z, and their names and terms say what they are. `engine.license` tells you which mode you're in and why. The licence key is checked offline, and nothing leaves the device.
+`TypomatEngine()` works in evaluation mode, under the evaluation terms in the [Engine License](https://engine.typomat.app/license#evaluation). It draws and compiles A to Z and a to z only: any other character comes back with `isMissing` and `isWithheld` set, and compiled fonts say what they are in their names and terms. `engine.license` tells you which mode you're in and why. The licence key is checked offline, and nothing leaves the device.
 
 Most plans work only in the apps your key names. Add your app's bundle ID in [your account](https://engine.typomat.app/account), and copy the new key it gives you. In any other app, `engine.license.reason` is `.app`, and the engine runs in evaluation mode.
 
