@@ -5,8 +5,8 @@
 
 import PackageDescription
 
-let version = "1.2.1"
-let checksum = "4b8a229f9ae6d8094509aaaf9acf8afdc8094a0f12bb3ef9131a871e297e05e1"
+let version = "1.3.0"
+let checksum = "822302ca38cc97cc4338869895d01d22a619d7bddce8c5636601930932b98096"
 
 let package = Package(
     name: "TypomatEngine",
