@@ -7,7 +7,7 @@ Makes fonts from a recipe, on the device. iOS 17, macOS 14 and Mac Catalyst 17 o
 In Xcode, add the package at `https://github.com/MarcoLuthi/typomat-engine-open`, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.8.1")
+.package(url: "https://github.com/MarcoLuthi/typomat-engine-open", from: "1.8.2")
 ```
 
 It needs no account or token. Your licence key, in your code, decides what the engine does.
